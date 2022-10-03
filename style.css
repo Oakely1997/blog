@@ -1,0 +1,10 @@
+
+.bigtitle {color: White; text-align: center; font-family: DancingScript-VariableFont;}
+.line {border:0;height: 0;box-shadow: 0 0 10px 1px white;width: 50%;}
+.table1 {width: 10cm;text-align: center;font-family: QwitcherGrypen-Regular;font-size:40px;margin: auto;}
+.table2 {width: 5cm; color: WHITE;background-color: black;margin: auto;border: 1px solid black;border-collapse: collapse; font-family: monospace;}
+.aboutul {color: white;  display: table;margin: 0 auto;}
+.container {border: 3mm ridge ; background-color: rgb(37, 194, 214); width: 40%; height: 20cm; margin: auto;}
+.container1 {background-color: black; width: 40%; height: 1cm; margin: auto;}
+.content {margin-left: 5%;margin-top: 5%; color:white; font-family: NotoSansTC-Bold;}
+.photo {margin-left: 25%; margin-right: 25%;}
