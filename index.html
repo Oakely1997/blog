@@ -3,8 +3,11 @@
         <head>
             <meta charset="UTF-8"></meta>
             <title>Oakley's Blog</title>
+            <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
             <meta name=”author” content=”Oakley”/>
-            <meta name="description" content="存放圖片"/>
+            <meta name="description" content="Oakley's Blog"/>
+
             <meta name=”viewport” content=”width=device-width, initial-scale=1.0”/>
             <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="font.css">
@@ -13,14 +16,32 @@
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
             <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
-
+            <script src="https://kit.fontawesome.com/ef75ffd62e.js" crossorigin="anonymous"></script>
+            
         </head>
         <body>
+            <button type="button" id="BackTop" class="toTop-arrow"></button>
+            <script>
+            $(function(){
+                $('#BackTop').click(function(){ 
+                    $('html,body').animate({scrollTop:0}, 333);
+                });
+                $(window).scroll(function() {
+                    if ( $(this).scrollTop() > 300 ){
+                        $('#BackTop').fadeIn(222);
+                    } else {
+                        $('#BackTop').stop().fadeOut(222);
+                    }
+                }).scroll();
+            });
+            </script>
             <style>
                     body {background-color: black;}
                     p {color:white}
                     p {font-family: monospace,cursive;}
                     img {width: 400px;}
+                    a{text-decoration:none}
+                    a:hover{text-decoration:none}
             </style>
             <h1 class="bigtitle" style="text-align: center;font-size: 60px;">Oakley's Blog</h1>
             <p style="text-align: center;">Record Life&#9996</p>
@@ -55,5 +76,6 @@
             <br><br/>
             <hr class="line"/>
             <br><br/>
+            <p style="text-align: center;">Copyright © 2022 Oakley</p>
         </body>
 </html>
